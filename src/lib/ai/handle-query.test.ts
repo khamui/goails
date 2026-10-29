@@ -3,6 +3,7 @@ import { MockLanguageModelV4 } from "ai/test";
 import { describe, expect, it } from "vitest";
 import { z } from "zod";
 import { productsResultContract } from "../domains/products/contract";
+import { recipesResultContract } from "../domains/recipes/contract";
 import { handleQuery } from "./handle-query";
 
 const usage = {
@@ -132,5 +133,41 @@ describe("handleQuery", () => {
     const parsed = productsResultContract.safeParse(searchResult?.output);
     expect(parsed.success).toBe(true);
     expect(parsed.success && parsed.data.products[0].name).toBe("Test Laptop");
+  });
+
+  it("routes a recipe query to the recipes Tool and yields contract-valid output", async () => {
+    const stubRecipesTool = tool({
+      description: "stub recipe search",
+      inputSchema: z.object({ query: z.string() }),
+      execute: async () =>
+        recipesResultContract.parse({
+          recipes: [
+            {
+              id: "r1",
+              title: "Hearty Beef Stew",
+              description: "A warming stew.",
+              cuisine: "British",
+              ingredients: ["beef", "carrots"],
+              steps: ["Brown the beef.", "Simmer with vegetables."],
+              minutes: 90,
+              tags: ["warm", "comfort"],
+            },
+          ],
+        }),
+    });
+
+    const result = handleQuery({
+      messages: [{ role: "user", content: "something warm for a rainy night" }],
+      model: toolCallModel("searchRecipes", { query: "something warm for a rainy night" }),
+      tools: { searchRecipes: stubRecipesTool },
+    });
+    await drain(result);
+
+    const toolResults = await result.toolResults;
+    const searchResult = toolResults.find((r) => r.toolName === "searchRecipes");
+    expect(searchResult).toBeDefined();
+    const parsed = recipesResultContract.safeParse(searchResult?.output);
+    expect(parsed.success).toBe(true);
+    expect(parsed.success && parsed.data.recipes[0].title).toBe("Hearty Beef Stew");
   });
 });

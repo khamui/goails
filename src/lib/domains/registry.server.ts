@@ -1,5 +1,6 @@
 import type { ToolSet } from "ai";
 import { PRODUCTS_TOOL_NAME, productsTool } from "./products/tool";
+import { RECIPES_TOOL_NAME, recipesTool } from "./recipes/tool";
 
 /**
  * Server-side registry of Domain Tools the Router can call. Adding a Domain =
@@ -8,4 +9,5 @@ import { PRODUCTS_TOOL_NAME, productsTool } from "./products/tool";
  */
 export const domainTools = {
   [PRODUCTS_TOOL_NAME]: productsTool,
+  [RECIPES_TOOL_NAME]: recipesTool,
 } satisfies ToolSet;
