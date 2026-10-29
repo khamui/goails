@@ -1,83 +1,99 @@
 "use client";
 
+import { useChat } from "@ai-sdk/react";
+import { DefaultChatTransport } from "ai";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { ProductsSurface } from "@/components/surfaces/products-surface";
+import type { GoailsUIMessage } from "@/lib/ai/ui";
 
 export default function Home() {
-  const [query, setQuery] = useState("");
-  const [answer, setAnswer] = useState("");
-  const [isStreaming, setIsStreaming] = useState(false);
+  const [input, setInput] = useState("");
+  const { messages, sendMessage, status } = useChat<GoailsUIMessage>({
+    transport: new DefaultChatTransport({ api: "/api/query" }),
+  });
+  const isBusy = status === "submitted" || status === "streaming";
 
-  async function handleSubmit(event: React.FormEvent) {
+  function handleSubmit(event: React.FormEvent) {
     event.preventDefault();
-    const trimmed = query.trim();
-    if (!trimmed || isStreaming) return;
-
-    setAnswer("");
-    setIsStreaming(true);
-    try {
-      const response = await fetch("/api/query", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ query: trimmed }),
-      });
-      if (!response.ok || !response.body) {
-        throw new Error(`Request failed (${response.status}).`);
-      }
-
-      const reader = response.body.getReader();
-      const decoder = new TextDecoder();
-      let received = "";
-      for (;;) {
-        const { done, value } = await reader.read();
-        if (done) break;
-        received += decoder.decode(value, { stream: true });
-        setAnswer(received);
-      }
-      if (!received) {
-        setAnswer(
-          "No response — the model may be busy (a 503). Check the server logs, retry, or set GOAILS_MODEL_ID=gemini-3.5-flash-lite in .env.local and restart.",
-        );
-      }
-    } catch (error) {
-      setAnswer(
-        error instanceof Error ? error.message : "Something went wrong.",
-      );
-    } finally {
-      setIsStreaming(false);
-    }
+    const text = input.trim();
+    if (!text || isBusy) return;
+    sendMessage({ text });
+    setInput("");
   }
 
   return (
-    <main className="flex flex-1 items-center justify-center p-4">
-      <div className="w-full max-w-xl space-y-6">
-        <div className="space-y-2 text-center">
+    <main className="flex flex-1 flex-col items-center p-4">
+      <div className="w-full max-w-2xl space-y-6">
+        <header className="space-y-2 pt-8 text-center">
           <h1 className="text-3xl font-semibold tracking-tight">Goails</h1>
           <p className="text-muted-foreground">
             Ask for anything — products, recipes, and more.
           </p>
-        </div>
+        </header>
+
         <form onSubmit={handleSubmit} className="flex gap-2">
           <Input
-            value={query}
-            onChange={(event) => setQuery(event.target.value)}
-            placeholder="e.g. a warm dinner for a rainy night"
+            value={input}
+            onChange={(event) => setInput(event.target.value)}
+            placeholder="e.g. a laptop under €1000"
             aria-label="Query"
-            disabled={isStreaming}
+            disabled={isBusy}
           />
-          <Button type="submit" disabled={isStreaming || !query.trim()}>
-            {isStreaming ? "…" : "Ask"}
+          <Button type="submit" disabled={isBusy || !input.trim()}>
+            {isBusy ? "…" : "Ask"}
           </Button>
         </form>
-        {answer && (
-          <div
-            aria-live="polite"
-            className="rounded-lg border border-border bg-card p-4 text-sm whitespace-pre-wrap text-card-foreground"
-          >
-            {answer}
-          </div>
-        )}
+
+        <div className="space-y-6">
+          {messages.map((message) => (
+            <div key={message.id} className="space-y-2">
+              {message.parts.map((part, index) => {
+                if (part.type === "text") {
+                  return (
+                    <p
+                      key={index}
+                      className={
+                        message.role === "user"
+                          ? "text-right text-sm text-muted-foreground"
+                          : "text-sm whitespace-pre-wrap"
+                      }
+                    >
+                      {part.text}
+                    </p>
+                  );
+                }
+
+                if (part.type === "tool-searchProducts") {
+                  switch (part.state) {
+                    case "input-streaming":
+                    case "input-available":
+                      return (
+                        <p key={index} className="text-sm text-muted-foreground">
+                          Searching products…
+                        </p>
+                      );
+                    case "output-available":
+                      return (
+                        <ProductsSurface key={index} products={part.output.products} />
+                      );
+                    case "output-error":
+                      return (
+                        <p key={index} className="text-sm text-destructive">
+                          Error: {part.errorText}
+                        </p>
+                      );
+                    default:
+                      return null;
+                  }
+                }
+
+                return null;
+              })}
+            </div>
+          ))}
+        </div>
       </div>
     </main>
   );
