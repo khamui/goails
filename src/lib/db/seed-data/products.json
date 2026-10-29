@@ -1,0 +1,242 @@
+[
+  {
+    "name": "UltraBook Pro 14",
+    "description": "A sleek and powerful laptop featuring an M-series processor, 16GB of RAM, and a stunning Retina display for professionals on the go.",
+    "category": "Electronics",
+    "priceCents": 129900,
+    "tags": [
+      "laptop",
+      "computer",
+      "ultrabook",
+      "work"
+    ]
+  },
+  {
+    "name": "GameMaster X15 Laptop",
+    "description": "High-performance gaming laptop equipped with dedicated graphics, a 144Hz refresh rate screen, and an RGB backlit keyboard.",
+    "category": "Electronics",
+    "priceCents": 149900,
+    "tags": [
+      "laptop",
+      "gaming",
+      "pc",
+      "rgb"
+    ]
+  },
+  {
+    "name": "NoiseCanceling Over-Ear Headphones",
+    "description": "Immerse yourself in pure sound with active noise cancellation and 30 hours of continuous wireless playback on a single charge.",
+    "category": "Audio",
+    "priceCents": 24900,
+    "tags": [
+      "audio",
+      "headphones",
+      "wireless",
+      "music"
+    ]
+  },
+  {
+    "name": "True Wireless Earbuds",
+    "description": "Compact earbuds delivering crisp highs and deep bass with sweat resistance, perfect for workouts and daily commuting.",
+    "category": "Audio",
+    "priceCents": 8900,
+    "tags": [
+      "audio",
+      "earbuds",
+      "bluetooth",
+      "sports"
+    ]
+  },
+  {
+    "name": "Smart Ambient Table Lamp",
+    "description": "Dimmable bedside lamp with millions of color options and voice control compatibility to set the perfect mood in any room.",
+    "category": "Home",
+    "priceCents": 4500,
+    "tags": [
+      "home",
+      "lighting",
+      "smart",
+      "decor"
+    ]
+  },
+  {
+    "name": "Memory Foam Ergonomic Pillow",
+    "description": "Contoured memory foam pillow designed to support your neck and align your spine for a deeper, more restful sleep.",
+    "category": "Home",
+    "priceCents": 3999,
+    "tags": [
+      "home",
+      "sleep",
+      "comfort",
+      "bedroom"
+    ]
+  },
+  {
+    "name": "Cast Iron Skillet 10-Inch",
+    "description": "Pre-seasoned heavy-duty skillet that provides exceptional heat retention and even cooking for searing, baking, and frying.",
+    "category": "Kitchen",
+    "priceCents": 2999,
+    "tags": [
+      "kitchen",
+      "cookware",
+      "cooking",
+      "castiron"
+    ]
+  },
+  {
+    "name": "Digital Coffee Scale with Timer",
+    "description": "Precise kitchen scale featuring an integrated timer to help you brew the perfect pour-over coffee every single morning.",
+    "category": "Kitchen",
+    "priceCents": 2450,
+    "tags": [
+      "kitchen",
+      "coffee",
+      "gadgets",
+      "cooking"
+    ]
+  },
+  {
+    "name": "Waterproof Camping Tent",
+    "description": "Easy-to-pitch three-season tent designed to withstand harsh weather conditions while keeping you dry and comfortable outdoors.",
+    "category": "Outdoor",
+    "priceCents": 15900,
+    "tags": [
+      "outdoor",
+      "camping",
+      "tent",
+      "adventure"
+    ]
+  },
+  {
+    "name": "Insulated Stainless Steel Water Bottle",
+    "description": "Double-wall vacuum insulated bottle that keeps your beverages ice-cold for 24 hours or steaming hot for up to 12 hours.",
+    "category": "Outdoor",
+    "priceCents": 2200,
+    "tags": [
+      "outdoor",
+      "hydration",
+      "bottle",
+      "travel"
+    ]
+  },
+  {
+    "name": "Portable Bluetooth Speaker",
+    "description": "Rugged, waterproof speaker delivering 360-degree stereo sound and deep bass for your beach trips and backyard parties.",
+    "category": "Audio",
+    "priceCents": 7999,
+    "tags": [
+      "audio",
+      "speaker",
+      "bluetooth",
+      "waterproof"
+    ]
+  },
+  {
+    "name": "Mechanical Gaming Keyboard",
+    "description": "Tactile mechanical switches and customizable per-key RGB lighting provide an elite typing and gaming experience.",
+    "category": "Electronics",
+    "priceCents": 11900,
+    "tags": [
+      "electronics",
+      "keyboard",
+      "gaming",
+      "rgb"
+    ]
+  },
+  {
+    "name": "Ergonomic Office Chair",
+    "description": "Mesh back task chair with adjustable lumbar support, armrests, and seat height to keep you comfortable during long workdays.",
+    "category": "Home",
+    "priceCents": 18900,
+    "tags": [
+      "home",
+      "office",
+      "furniture",
+      "ergonomic"
+    ]
+  },
+  {
+    "name": "Stainless Steel Chef Knife",
+    "description": "Razor-sharp 8-inch chef knife forged from high-carbon steel with an ergonomic handle for effortless chopping and slicing.",
+    "category": "Kitchen",
+    "priceCents": 4999,
+    "tags": [
+      "kitchen",
+      "knife",
+      "cooking",
+      "chef"
+    ]
+  },
+  {
+    "name": "Ultra-Bright LED Headlamp",
+    "description": "Hands-free lighting solution with multiple brightness levels and a red night-vision mode, ideal for hiking and night running.",
+    "category": "Outdoor",
+    "priceCents": 2999,
+    "tags": [
+      "outdoor",
+      "hiking",
+      "lighting",
+      "camping"
+    ]
+  },
+  {
+    "name": "4K Action Camera",
+    "description": "Capture your adventures in stunning ultra-high definition with waterproof housing and advanced electronic image stabilization.",
+    "category": "Electronics",
+    "priceCents": 19999,
+    "tags": [
+      "electronics",
+      "camera",
+      "action",
+      "4k"
+    ]
+  },
+  {
+    "name": "Robot Vacuum Cleaner",
+    "description": "Autonomous floor cleaner with intelligent mapping and strong suction power to keep your hardwood floors and carpets spotless.",
+    "category": "Home",
+    "priceCents": 29900,
+    "tags": [
+      "home",
+      "cleaning",
+      "smart",
+      "appliances"
+    ]
+  },
+  {
+    "name": "High-Speed Blender",
+    "description": "Powerful countertop blender with hardened stainless steel blades, ideal for making smoothies, soups, and frozen treats.",
+    "category": "Kitchen",
+    "priceCents": 8999,
+    "tags": [
+      "kitchen",
+      "blender",
+      "appliances",
+      "smoothie"
+    ]
+  },
+  {
+    "name": "Ultralight Sleeping Pad",
+    "description": "Compact and insulating inflatable pad designed to provide maximum comfort and warmth during backpacking trips.",
+    "category": "Outdoor",
+    "priceCents": 6500,
+    "tags": [
+      "outdoor",
+      "camping",
+      "sleeping",
+      "backpacking"
+    ]
+  },
+  {
+    "name": "Turntable with Bluetooth Output",
+    "description": "Belt-drive vinyl record player that lets you enjoy your classic records through modern wireless speakers or traditional wired setups.",
+    "category": "Audio",
+    "priceCents": 15999,
+    "tags": [
+      "audio",
+      "vinyl",
+      "turntable",
+      "music"
+    ]
+  }
+]

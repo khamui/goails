@@ -1,0 +1,1488 @@
+[
+  {
+    "title": "Classic Beef Bourguignon",
+    "description": "A rich and hearty French stew made with tender chunks of beef braised in red wine, broth, and aromatic vegetables.",
+    "cuisine": "French",
+    "ingredients": [
+      "3 lbs beef chuck roast, cut into cubes",
+      "6 slices bacon, diced",
+      "3 cups dry red wine",
+      "2 cups beef broth",
+      "1 lb pearl onions",
+      "8 oz mushrooms, quartered",
+      "3 cloves garlic, minced",
+      "2 tbsp tomato paste",
+      "3 tbsp all-purpose flour",
+      "Fresh thyme and rosemary"
+    ],
+    "steps": [
+      "Brown the bacon in a large Dutch oven until crisp, then remove and set aside.",
+      "Sear the beef cubes in the bacon fat until well browned on all sides, then remove.",
+      "Sauté the onions, mushrooms, and garlic in the pot until tender.",
+      "Return the beef and bacon to the pot, sprinkle with flour, and stir well.",
+      "Pour in the red wine and beef broth, add the herbs and tomato paste, and bring to a simmer.",
+      "Cover and bake in a preheated oven at 325F for 3 hours until the beef is melt-in-your-mouth tender."
+    ],
+    "minutes": 210,
+    "tags": [
+      "stew",
+      "beef",
+      "comfort food",
+      "French",
+      "winter"
+    ]
+  },
+  {
+    "title": "Creamy Tuscan Chicken Soup",
+    "description": "A comforting Italian-inspired soup loaded with shredded chicken, sun-dried tomatoes, kale, and a rich garlic-parmesan broth.",
+    "cuisine": "Italian",
+    "ingredients": [
+      "1 lb boneless skinless chicken breasts",
+      "4 cups chicken broth",
+      "1 cup heavy cream",
+      "2 cups chopped Tuscan kale",
+      "1/2 cup sun-dried tomatoes, chopped",
+      "1 onion, diced",
+      "3 cloves garlic, minced",
+      "1 tsp Italian seasoning",
+      "1/2 cup grated parmesan cheese",
+      "2 tbsp olive oil"
+    ],
+    "steps": [
+      "Heat olive oil in a large pot and sauté the onion and garlic until fragrant.",
+      "Add the chicken broth, chicken breasts, and Italian seasoning, bringing to a boil.",
+      "Reduce heat and simmer until the chicken is fully cooked, about 15 minutes.",
+      "Remove the chicken, shred it with two forks, and return it to the pot.",
+      "Stir in the heavy cream, chopped sun-dried tomatoes, kale, and parmesan cheese.",
+      "Simmer for another 5 minutes until the kale is wilted and the soup is hot."
+    ],
+    "minutes": 35,
+    "tags": [
+      "soup",
+      "chicken",
+      "Italian",
+      "creamy",
+      "comfort food"
+    ]
+  },
+  {
+    "title": "Hearty Lamb Rogan Josh",
+    "description": "A fragrant and warming Kashmiri curry featuring tender lamb slow-cooked in a yogurt and aromatic spice sauce.",
+    "cuisine": "Indian",
+    "ingredients": [
+      "2 lbs lamb shoulder, diced",
+      "1 cup plain yogurt",
+      "2 onions, finely sliced",
+      "4 cloves garlic and 1 inch ginger, pasted",
+      "2 tsp Kashmiri chili powder",
+      "1 tsp ground cumin and coriander",
+      "1/2 tsp ground cinnamon and cardamom",
+      "1/2 cup ghee or vegetable oil",
+      "Fresh cilantro for garnish",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Heat ghee in a heavy-bottomed pot and fry the sliced onions until deeply golden brown.",
+      "Add the garlic-ginger paste and all the ground spices, cooking for 2 minutes until fragrant.",
+      "Add the diced lamb and sear until browned on all sides.",
+      "Whisk the yogurt and gradually add it to the pot, stirring constantly to prevent curdling.",
+      "Add a cup of water, cover with a tight-fitting lid, and simmer on low heat for 2 hours until the lamb is tender.",
+      "Garnish with fresh cilantro and serve hot with naan or basmati rice."
+    ],
+    "minutes": 150,
+    "tags": [
+      "curry",
+      "lamb",
+      "Indian",
+      "spicy",
+      "warming"
+    ]
+  },
+  {
+    "title": "Traditional Irish Shepherd's Pie",
+    "description": "A savory casserole featuring minced lamb and vegetables in a rich gravy, topped with a thick layer of golden, buttery mashed potatoes.",
+    "cuisine": "Irish",
+    "ingredients": [
+      "1.5 lbs ground lamb",
+      "2 lbs russet potatoes, peeled and quartered",
+      "1 cup frozen peas and carrots",
+      "1 large onion, diced",
+      "2 tbsp tomato paste",
+      "1.5 cups beef broth",
+      "2 tbsp Worcestershire sauce",
+      "1/2 cup milk and 4 tbsp butter",
+      "1 cup grated sharp cheddar cheese",
+      "Salt and black pepper to taste"
+    ],
+    "steps": [
+      "Boil the potatoes in salted water until fork tender, then mash with butter, milk, salt, and pepper.",
+      "Brown the ground lamb and diced onion in a large skillet, draining excess fat.",
+      "Stir in the tomato paste, Worcestershire sauce, and beef broth, simmering until thickened.",
+      "Mix in the frozen peas and carrots, season with salt and pepper, and transfer to a baking dish.",
+      "Spread the mashed potatoes evenly over the meat mixture and sprinkle with cheddar cheese.",
+      "Bake at 400F for 25 minutes until the top is golden brown and bubbly."
+    ],
+    "minutes": 60,
+    "tags": [
+      "bake",
+      "lamb",
+      "Irish",
+      "comfort food",
+      "potato"
+    ]
+  },
+  {
+    "title": "Japanese Chicken Katsu Curry",
+    "description": "Crispy panko-crusted chicken cutlets served over a bed of fluffy rice with a rich, savory Japanese curry sauce.",
+    "cuisine": "Japanese",
+    "ingredients": [
+      "2 chicken breasts, pounded flat",
+      "1 cup panko breadcrumbs",
+      "1/2 cup all-purpose flour",
+      "2 eggs, beaten",
+      "2 carrots and 2 potatoes, cubed",
+      "1 large onion, sliced",
+      "1 box Japanese curry roux blocks",
+      "3 cups chicken broth",
+      "Vegetable oil for frying",
+      "Steamed white rice for serving"
+    ],
+    "steps": [
+      "Sauté the onion, carrots, and potatoes in a pot with a little oil until softened.",
+      "Add the chicken broth, bring to a boil, then simmer until vegetables are tender.",
+      "Turn off the heat, add the curry roux blocks, stirring until completely dissolved, then simmer until thickened.",
+      "Dredge chicken breasts in flour, dip in beaten eggs, and coat thoroughly with panko breadcrumbs.",
+      "Fry the chicken in hot oil until golden brown and cooked through, then slice into strips.",
+      "Serve the curry sauce over rice and top with the crispy chicken cutlet."
+    ],
+    "minutes": 45,
+    "tags": [
+      "curry",
+      "chicken",
+      "Japanese",
+      "comfort food",
+      "fried"
+    ]
+  },
+  {
+    "title": "Creamy Potato Leek Soup",
+    "description": "A velvety, comforting French soup made with slow-cooked leeks, potatoes, garlic, and rich cream.",
+    "cuisine": "French",
+    "ingredients": [
+      "4 large leeks, white and light green parts only, sliced",
+      "2 lbs Yukon Gold potatoes, peeled and diced",
+      "4 cups vegetable or chicken stock",
+      "1/2 cup heavy cream",
+      "3 tbsp butter",
+      "2 cloves garlic, minced",
+      "Fresh chives, chopped",
+      "Salt and white pepper to taste"
+    ],
+    "steps": [
+      "Melt butter in a large pot and sauté the sliced leeks and garlic over medium-low heat until soft and translucent.",
+      "Add the diced potatoes and stock, bringing the mixture to a boil.",
+      "Reduce heat, cover, and simmer for 20 minutes until the potatoes are completely tender.",
+      "Use an immersion blender to puree the soup until smooth and creamy.",
+      "Stir in the heavy cream and season with salt and white pepper.",
+      "Garnish with chopped chives and serve warm."
+    ],
+    "minutes": 40,
+    "tags": [
+      "soup",
+      "vegetarian",
+      "French",
+      "creamy",
+      "potato"
+    ]
+  },
+  {
+    "title": "Hearty Beef and Barley Soup",
+    "description": "A classic cold-weather soup packed with tender beef, chewy pearl barley, and a medley of root vegetables.",
+    "cuisine": "American",
+    "ingredients": [
+      "1 lb beef chuck, cut into small bite-sized pieces",
+      "3/4 cup pearl barley",
+      "6 cups beef broth",
+      "3 carrots, diced",
+      "3 stalks celery, diced",
+      "1 onion, diced",
+      "2 cloves garlic, minced",
+      "1 can (14 oz) diced tomatoes",
+      "2 tbsp olive oil",
+      "Dried thyme and bay leaf"
+    ],
+    "steps": [
+      "Heat olive oil in a heavy soup pot and brown the beef pieces on all sides.",
+      "Add the onion, carrots, celery, and garlic, cooking until vegetables start to soften.",
+      "Pour in the beef broth and diced tomatoes, then add the thyme and bay leaf.",
+      "Stir in the pearl barley and bring the soup to a boil.",
+      "Reduce heat to low, cover, and simmer for 1 hour until the beef and barley are tender.",
+      "Remove the bay leaf, season with salt and pepper, and serve hot."
+    ],
+    "minutes": 80,
+    "tags": [
+      "soup",
+      "beef",
+      "American",
+      "hearty",
+      "winter"
+    ]
+  },
+  {
+    "title": "Spiced Chickpea and Spinach Stew",
+    "description": "A comforting, plant-based North African-inspired stew featuring protein-rich chickpeas, tomatoes, and tender spinach.",
+    "cuisine": "Moroccan",
+    "ingredients": [
+      "2 cans (15 oz each) chickpeas, rinsed and drained",
+      "4 cups fresh baby spinach",
+      "1 can (14 oz) crushed tomatoes",
+      "1 onion, chopped",
+      "3 cloves garlic, minced",
+      "1 tbsp fresh ginger, grated",
+      "1 tsp ground cumin, coriander, and turmeric",
+      "1/2 tsp smoked paprika",
+      "2 cups vegetable broth",
+      "2 tbsp olive oil"
+    ],
+    "steps": [
+      "Heat olive oil in a large pot and sauté the onion until translucent.",
+      "Add the garlic, ginger, and all the spices, stirring for about 1 minute until fragrant.",
+      "Pour in the crushed tomatoes and vegetable broth, then add the chickpeas.",
+      "Bring to a simmer and cook uncovered for 20 minutes to let the flavors meld.",
+      "Stir in the baby spinach and cook until wilted and tender.",
+      "Serve warm with crusty bread or over couscous."
+    ],
+    "minutes": 30,
+    "tags": [
+      "stew",
+      "vegan",
+      "Moroccan",
+      "healthy",
+      "comfort food"
+    ]
+  },
+  {
+    "title": "Classic Chicken Pot Pie",
+    "description": "A golden, flaky pie crust filled with tender chicken, mixed vegetables, and a rich, creamy herb sauce.",
+    "cuisine": "American",
+    "ingredients": [
+      "2 cups cooked chicken, diced",
+      "1 cup mixed frozen peas and carrots",
+      "1/2 cup diced potatoes, cooked",
+      "1/3 cup butter",
+      "1/3 cup all-purpose flour",
+      "1.5 cups chicken broth",
+      "1/2 cup milk",
+      "1 roll store-bought double pie crust",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Melt butter in a skillet, stir in flour, and cook for 1 minute to create a roux.",
+      "Gradually whisk in the chicken broth and milk, simmering until thick and bubbly.",
+      "Stir in the diced chicken, peas, carrots, and potatoes, then season with salt and pepper.",
+      "Place one pie crust into the bottom of a pie dish and pour the filling inside.",
+      "Cover with the second pie crust, crimp the edges, and cut slits in the top for venting.",
+      "Bake at 425F for 35 minutes until the crust is golden brown and the filling is bubbly."
+    ],
+    "minutes": 50,
+    "tags": [
+      "bake",
+      "chicken",
+      "American",
+      "comfort food",
+      "pie"
+    ]
+  },
+  {
+    "title": "Thai Green Curry with Tofu",
+    "description": "A vibrant and warming Thai curry featuring crispy tofu, bamboo shoots, bell peppers, and fresh basil in a rich coconut milk broth.",
+    "cuisine": "Thai",
+    "ingredients": [
+      "1 block extra firm tofu, pressed and cubed",
+      "3 tbsp green curry paste",
+      "1 can (14 oz) full-fat coconut milk",
+      "1 red bell pepper, sliced",
+      "1 cup bamboo shoots, drained",
+      "1 zucchini, sliced",
+      "2 tbsp coconut oil",
+      "1 tbsp soy sauce or tamari",
+      "Fresh Thai basil leaves",
+      "Jasmine rice for serving"
+    ],
+    "steps": [
+      "Heat coconut oil in a pan and pan-fry the tofu cubes until golden and crispy on all sides, then set aside.",
+      "In a wok or large pan, fry the green curry paste for 1 minute until fragrant.",
+      "Pour in half of the coconut milk and stir until it begins to bubble and separate.",
+      "Add the bell pepper, zucchini, and bamboo shoots, cooking for a few minutes.",
+      "Pour in the remaining coconut milk and soy sauce, simmering until vegetables are tender.",
+      "Gently fold in the crispy tofu and fresh basil leaves, then serve over jasmine rice."
+    ],
+    "minutes": 30,
+    "tags": [
+      "curry",
+      "vegetarian",
+      "Thai",
+      "spicy",
+      "coconut"
+    ]
+  },
+  {
+    "title": "Slow-Roasted Pork Shoulder",
+    "description": "Fall-apart tender pork shoulder rubbed with aromatic spices and slow-roasted for hours until the skin is perfectly crisp.",
+    "cuisine": "Latin American",
+    "ingredients": [
+      "4 lbs pork shoulder (boston butt)",
+      "4 cloves garlic, minced",
+      "1 tbsp ground cumin",
+      "1 tbsp dried oregano",
+      "1 tbsp smoked paprika",
+      "1/4 cup olive oil",
+      "Juice of 2 limes",
+      "1 large onion, sliced",
+      "Salt and black pepper to taste"
+    ],
+    "steps": [
+      "Mix the garlic, cumin, oregano, paprika, olive oil, lime juice, salt, and pepper into a thick paste.",
+      "Rub the spice paste all over the pork shoulder, massaging it into the meat.",
+      "Place the sliced onions in the bottom of a roasting pan and place the pork shoulder on top.",
+      "Cover the roasting pan tightly with aluminum foil.",
+      "Roast in a preheated oven at 300F for 4 hours.",
+      "Remove the foil, increase the heat to 400F, and roast for another 30 minutes to crisp the exterior."
+    ],
+    "minutes": 270,
+    "tags": [
+      "roast",
+      "pork",
+      "Latin American",
+      "comfort food",
+      "meat"
+    ]
+  },
+  {
+    "title": "Hearty Lentil and Vegetable Stew",
+    "description": "A thick, wholesome stew made with earthy brown lentils, tomatoes, root vegetables, and fragrant herbs.",
+    "cuisine": "Mediterranean",
+    "ingredients": [
+      "1.5 cups brown lentils, rinsed",
+      "4 cups vegetable broth",
+      "1 can (14 oz) diced tomatoes",
+      "2 carrots, diced",
+      "2 stalks celery, diced",
+      "1 onion, diced",
+      "3 cloves garlic, minced",
+      "1 tsp dried oregano and thyme",
+      "2 tbsp olive oil",
+      "Fresh parsley for garnish"
+    ],
+    "steps": [
+      "Heat olive oil in a large pot and sauté onion, carrots, and celery until tender.",
+      "Add the garlic and dried herbs, cooking for 1 minute until fragrant.",
+      "Stir in the rinsed brown lentils, diced tomatoes, and vegetable broth.",
+      "Bring the stew to a boil, then reduce heat to low, cover, and simmer for 35 minutes.",
+      "Check that the lentils are tender and the liquid has thickened.",
+      "Garnish with fresh parsley and serve warm with crusty bread."
+    ],
+    "minutes": 45,
+    "tags": [
+      "stew",
+      "vegan",
+      "Mediterranean",
+      "healthy",
+      "lentils"
+    ]
+  },
+  {
+    "title": "Cozy Beef Stew with Root Vegetables",
+    "description": "The ultimate comfort food: chunks of beef, potatoes, carrots, and parsnips simmered in a rich, savory broth.",
+    "cuisine": "American",
+    "ingredients": [
+      "2 lbs beef chuck roast, cubed",
+      "3 large potatoes, cubed",
+      "3 carrots, sliced",
+      "2 parsnips, sliced",
+      "1 onion, chopped",
+      "3 cups beef broth",
+      "1/2 cup red wine",
+      "3 tbsp all-purpose flour",
+      "2 tbsp tomato paste",
+      "Fresh thyme and bay leaves"
+    ],
+    "steps": [
+      "Toss beef cubes in flour seasoned with salt and pepper.",
+      "Brown the beef in a large pot over medium-high heat, then remove.",
+      "Sauté the onion in the same pot, then add tomato paste and red wine to deglaze.",
+      "Return beef to the pot, add beef broth, thyme, and bay leaves, and simmer for 1 hour.",
+      "Add the potatoes, carrots, and parsnips to the pot.",
+      "Simmer for another 45 minutes until vegetables and beef are tender."
+    ],
+    "minutes": 120,
+    "tags": [
+      "stew",
+      "beef",
+      "American",
+      "comfort food",
+      "winter"
+    ]
+  },
+  {
+    "title": "Creamy Mushroom and Spinach Lasagna",
+    "description": "A rich vegetarian bake layered with lasagna noodles, sautéed mushrooms, wilted spinach, marinara, and lots of melted cheese.",
+    "cuisine": "Italian",
+    "ingredients": [
+      "9 lasagna noodles, cooked",
+      "1 lb mixed mushrooms, sliced",
+      "4 cups fresh baby spinach",
+      "2 cups ricotta cheese",
+      "3 cups shredded mozzarella cheese",
+      "1 cup grated parmesan cheese",
+      "3 cups marinara sauce",
+      "2 cloves garlic, minced",
+      "2 tbsp butter",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Melt butter in a skillet and sauté the mushrooms and garlic until golden, then add spinach until wilted.",
+      "In a bowl, mix the ricotta cheese with half of the parmesan cheese, salt, and pepper.",
+      "Spread a thin layer of marinara sauce in a baking dish, then add a layer of lasagna noodles.",
+      "Layer with half of the ricotta mixture, mushroom-spinach mix, and mozzarella cheese.",
+      "Repeat the layers, finishing with noodles, remaining sauce, and a generous topping of mozzarella and parmesan.",
+      "Bake at 375F for 35 minutes until bubbly and golden on top."
+    ],
+    "minutes": 60,
+    "tags": [
+      "bake",
+      "vegetarian",
+      "Italian",
+      "pasta",
+      "comfort food"
+    ]
+  },
+  {
+    "title": "Spicy Jamaican Jerk Chicken",
+    "description": "Warm, fiery, and deeply flavorful chicken marinated in a vibrant blend of habanero, allspice, thyme, and brown sugar, then roasted.",
+    "cuisine": "Jamaican",
+    "ingredients": [
+      "4 chicken quarters (legs and thighs)",
+      "2 habanero peppers, seeded",
+      "4 green onions, chopped",
+      "3 cloves garlic",
+      "1 tbsp fresh ginger, minced",
+      "1 tbsp ground allspice",
+      "1 tsp dried thyme",
+      "2 tbsp brown sugar",
+      "1/4 cup soy sauce",
+      "2 tbsp vegetable oil"
+    ],
+    "steps": [
+      "Combine habanero peppers, green onions, garlic, ginger, allspice, thyme, brown sugar, soy sauce, and oil in a blender.",
+      "Blend until smooth to create the jerk marinade.",
+      "Score the chicken pieces with a knife and coat thoroughly with the marinade.",
+      "Allow the chicken to marinate in the refrigerator for at least 2 hours, preferably overnight.",
+      "Preheat oven to 375F and place chicken in a roasting pan.",
+      "Roast for 45-50 minutes until the chicken is cooked through and slightly charred on the edges."
+    ],
+    "minutes": 70,
+    "tags": [
+      "roast",
+      "chicken",
+      "Jamaican",
+      "spicy",
+      "meat"
+    ]
+  },
+  {
+    "title": "Hearty White Bean and Escarole Soup",
+    "description": "A comforting Tuscan soup featuring creamy cannellini beans, bitter escarole greens, garlic, and savory broth.",
+    "cuisine": "Italian",
+    "ingredients": [
+      "2 cans (15 oz each) cannellini beans, rinsed",
+      "1 head escarole, washed and chopped",
+      "4 cups vegetable broth",
+      "1 onion, diced",
+      "3 cloves garlic, minced",
+      "2 tbsp olive oil",
+      "1 Parmesan rind (optional)",
+      "Salt and red pepper flakes to taste"
+    ],
+    "steps": [
+      "Heat olive oil in a large pot and sauté the onion and garlic until soft.",
+      "Add the vegetable broth, cannellini beans, and the parmesan rind if using.",
+      "Bring to a simmer and cook for 15 minutes to let the flavors develop.",
+      "Stir in the chopped escarole and cook for another 5 minutes until wilted and tender.",
+      "Season with salt and a pinch of red pepper flakes.",
+      "Remove the parmesan rind, ladle into bowls, and serve warm."
+    ],
+    "minutes": 30,
+    "tags": [
+      "soup",
+      "vegetarian",
+      "Italian",
+      "beans",
+      "healthy"
+    ]
+  },
+  {
+    "title": "Creamy Butter Chicken",
+    "description": "Tender pieces of marinated chicken simmered in a rich, velvety, spiced tomato and butter sauce.",
+    "cuisine": "Indian",
+    "ingredients": [
+      "1.5 lbs chicken thighs, cut into bite-sized pieces",
+      "1/2 cup plain yogurt",
+      "1 tbsp garam masala, cumin, and turmeric",
+      "1 can (14 oz) tomato puree",
+      "1 onion, chopped",
+      "3 cloves garlic and 1 inch ginger, minced",
+      "1/2 cup heavy cream",
+      "4 tbsp butter",
+      "Fresh cilantro for garnish"
+    ],
+    "steps": [
+      "Marinate chicken in yogurt, half the garlic, ginger, and half the spices for 30 minutes.",
+      "Melt 2 tablespoons of butter in a large skillet and brown the marinated chicken pieces, then set aside.",
+      "In the same skillet, melt remaining butter and sauté onion, remaining garlic, and ginger.",
+      "Add tomato puree and remaining spices, simmering for 15 minutes.",
+      "Stir in the heavy cream and return the cooked chicken to the sauce.",
+      "Simmer for 10 minutes until thick, garnish with cilantro, and serve with naan."
+    ],
+    "minutes": 45,
+    "tags": [
+      "curry",
+      "chicken",
+      "Indian",
+      "creamy",
+      "comfort food"
+    ]
+  },
+  {
+    "title": "Traditional French Onion Soup",
+    "description": "Deeply caramelized onions simmered in a rich beef broth, topped with crusty bread and melted Gruyère cheese.",
+    "cuisine": "French",
+    "ingredients": [
+      "3 lbs yellow onions, thinly sliced",
+      "3 tbsp butter",
+      "2 tbsp olive oil",
+      "1 tsp sugar",
+      "6 cups rich beef stock",
+      "1/2 cup dry white wine",
+      "1 baguette, sliced and toasted",
+      "2 cups shredded Gruyère cheese",
+      "Fresh thyme and salt"
+    ],
+    "steps": [
+      "Heat butter and olive oil in a large pot, add sliced onions and sugar.",
+      "Cook onions over medium-low heat, stirring frequently for 45 minutes until deeply caramelized and brown.",
+      "Pour in the white wine to deglaze the bottom of the pot, scraping up any browned bits.",
+      "Add the beef stock and fresh thyme, then simmer for 30 minutes.",
+      "Ladle soup into oven-safe bowls, top with toasted baguette slices and a generous mound of Gruyère cheese.",
+      "Broil for 3-5 minutes until the cheese is melted, bubbly, and golden brown."
+    ],
+    "minutes": 85,
+    "tags": [
+      "soup",
+      "French",
+      "cheese",
+      "comfort food",
+      "winter"
+    ]
+  },
+  {
+    "title": "Hearty Beef Enchilada Bake",
+    "description": "A layered casserole featuring tortillas, seasoned ground beef, black beans, enchilada sauce, and plenty of melted cheese.",
+    "cuisine": "Mexican",
+    "ingredients": [
+      "1 lb ground beef",
+      "1 can (15 oz) black beans, rinsed",
+      "1 can (15 oz) red enchilada sauce",
+      "8 corn tortillas, quartered",
+      "1 onion, diced",
+      "2 cloves garlic, minced",
+      "2 cups shredded Mexican blend cheese",
+      "1 tsp ground cumin and chili powder",
+      "Fresh cilantro for garnish"
+    ],
+    "steps": [
+      "Brown the ground beef and onion in a skillet, adding garlic, cumin, and chili powder.",
+      "Stir in the black beans and a quarter cup of enchilada sauce, cooking until warm.",
+      "Spread a little enchilada sauce in the bottom of a baking dish.",
+      "Layer with quartered corn tortillas, half the beef mixture, sauce, and cheese.",
+      "Repeat the layers, finishing with tortillas, remaining sauce, and a heavy layer of cheese.",
+      "Bake at 375F for 25 minutes until bubbly and melted."
+    ],
+    "minutes": 40,
+    "tags": [
+      "bake",
+      "beef",
+      "Mexican",
+      "cheese",
+      "comfort food"
+    ]
+  },
+  {
+    "title": "Classic Swedish Meatballs",
+    "description": "Tender pork and beef meatballs bathed in a rich, creamy gravy, traditionally served with lingonberry jam and mashed potatoes.",
+    "cuisine": "Swedish",
+    "ingredients": [
+      "1 lb ground beef and 1/2 lb ground pork",
+      "1/2 cup breadcrumbs soaked in 1/4 cup milk",
+      "1 onion, finely minced",
+      "1 egg",
+      "4 cups beef broth",
+      "1/2 cup heavy cream",
+      "3 tbsp butter and 3 tbsp flour",
+      "1 tsp allspice and nutmeg",
+      "Mashed potatoes for serving"
+    ],
+    "steps": [
+      "Mix the ground meats, soaked breadcrumbs, minced onion, egg, allspice, nutmeg, salt, and pepper in a bowl.",
+      "Roll the mixture into small meatballs and fry in butter until browned on all sides, then remove.",
+      "Melt the remaining butter in the same pan, stir in the flour, and cook for 1 minute.",
+      "Gradually whisk in the beef broth and heavy cream, simmering until a thick gravy forms.",
+      "Return the meatballs to the gravy and simmer for 15 minutes.",
+      "Serve hot over mashed potatoes with a side of jam."
+    ],
+    "minutes": 45,
+    "tags": [
+      "stew",
+      "meat",
+      "Swedish",
+      "creamy",
+      "comfort food"
+    ]
+  },
+  {
+    "title": "Warm Roasted Root Vegetable Salad",
+    "description": "A comforting, hearty salad featuring roasted sweet potatoes, beets, and carrots over baby kale with a maple-mustard dressing.",
+    "cuisine": "American",
+    "ingredients": [
+      "2 sweet potatoes, cubed",
+      "3 beets, cubed",
+      "3 carrots, sliced",
+      "5 cups baby kale",
+      "1/2 cup goat cheese, crumbled",
+      "1/2 cup pecans, toasted",
+      "3 tbsp olive oil",
+      "2 tbsp maple syrup",
+      "1 tbsp Dijon mustard",
+      "Salt and pepper"
+    ],
+    "steps": [
+      "Toss sweet potatoes, beets, and carrots with olive oil, salt, and pepper on a baking sheet.",
+      "Roast at 400F for 30 minutes until tender and caramelized.",
+      "Whisk together remaining olive oil, maple syrup, Dijon mustard, and a splash of vinegar for the dressing.",
+      "In a large bowl, toss the baby kale with half of the dressing.",
+      "Top the kale with the warm roasted root vegetables.",
+      "Garnish with crumbled goat cheese and toasted pecans."
+    ],
+    "minutes": 40,
+    "tags": [
+      "roast",
+      "vegetarian",
+      "American",
+      "healthy",
+      "salad"
+    ]
+  },
+  {
+    "title": "Creamy Seafood Chowder",
+    "description": "A rich and warming chowder loaded with tender fish, shrimp, potatoes, and corn in a creamy, savory broth.",
+    "cuisine": "American",
+    "ingredients": [
+      "1 lb white fish fillets, cubed",
+      "1/2 lb shrimp, peeled and deveined",
+      "3 slices bacon, diced",
+      "3 potatoes, peeled and diced",
+      "1 cup frozen corn",
+      "1 onion, diced",
+      "3 cups seafood or chicken stock",
+      "1 cup heavy cream",
+      "3 tbsp butter and 3 tbsp flour"
+    ],
+    "steps": [
+      "Cook the diced bacon in a large pot until crisp, then remove and set aside.",
+      "Sauté the onion and potatoes in the bacon fat until the onion is soft.",
+      "Sprinkle flour over the vegetables, stir well, and slowly pour in the seafood stock.",
+      "Simmer until potatoes are tender, then stir in the corn and heavy cream.",
+      "Gently add the cubed white fish and shrimp, simmering for 5 minutes until seafood is cooked through.",
+      "Garnish with reserved bacon and serve hot."
+    ],
+    "minutes": 40,
+    "tags": [
+      "soup",
+      "seafood",
+      "American",
+      "creamy",
+      "comfort food"
+    ]
+  },
+  {
+    "title": "Spiced Yellow Lentil Dal",
+    "description": "A comforting, warming Indian dal made with split yellow lentils, tempered with mustard seeds, garlic, and ghee.",
+    "cuisine": "Indian",
+    "ingredients": [
+      "1 cup yellow moong dal or toor dal, rinsed",
+      "3 cups water",
+      "1 tomato, chopped",
+      "1 tsp turmeric and cumin",
+      "2 tbsp ghee",
+      "1 tsp mustard seeds and cumin seeds",
+      "3 cloves garlic, sliced",
+      "2 dried red chilies",
+      "Fresh cilantro for garnish"
+    ],
+    "steps": [
+      "Boil the rinsed lentils with water, chopped tomato, turmeric, and salt in a pot for 25 minutes until soft and mushy.",
+      "Whisk the cooked dal until smooth.",
+      "In a separate small pan, heat the ghee and splutter the mustard and cumin seeds.",
+      "Add the sliced garlic and dried red chilies, frying until golden brown.",
+      "Pour the hot tempering mixture directly into the cooked dal and stir well.",
+      "Garnish with fresh cilantro and serve hot with flatbread or rice."
+    ],
+    "minutes": 35,
+    "tags": [
+      "soup",
+      "vegetarian",
+      "Indian",
+      "healthy",
+      "dal"
+    ]
+  },
+  {
+    "title": "Hearty Beef and Bean Chili",
+    "description": "A thick, warming chili packed with ground beef, kidney beans, tomatoes, and a robust blend of chili spices.",
+    "cuisine": "American",
+    "ingredients": [
+      "1.5 lbs ground beef",
+      "2 cans (15 oz each) kidney beans, rinsed",
+      "1 can (28 oz) crushed tomatoes",
+      "1 large onion, diced",
+      "3 cloves garlic, minced",
+      "2 tbsp chili powder",
+      "1 tsp cumin and smoked paprika",
+      "1 cup beef broth",
+      "Shredded cheddar for serving"
+    ],
+    "steps": [
+      "Brown the ground beef and diced onion in a large Dutch oven until meat is fully cooked.",
+      "Add the garlic, chili powder, cumin, and smoked paprika, cooking for 1 minute.",
+      "Pour in the crushed tomatoes, kidney beans, and beef broth, stirring to combine.",
+      "Bring the chili to a boil, then reduce heat to low and simmer uncovered for 45 minutes.",
+      "Season with salt and pepper to taste.",
+      "Ladle into bowls and top with shredded cheddar cheese."
+    ],
+    "minutes": 60,
+    "tags": [
+      "stew",
+      "beef",
+      "American",
+      "spicy",
+      "comfort food"
+    ]
+  },
+  {
+    "title": "Baked Ziti with Ricotta and Mozzarella",
+    "description": "A classic Italian-American casserole featuring ziti pasta baked in a rich tomato sauce with dollops of creamy ricotta and melted mozzarella.",
+    "cuisine": "Italian",
+    "ingredients": [
+      "1 lb ziti pasta, cooked",
+      "4 cups marinara sauce",
+      "1.5 cups ricotta cheese",
+      "3 cups shredded mozzarella cheese",
+      "1/2 cup grated parmesan cheese",
+      "1 onion, diced",
+      "2 cloves garlic, minced",
+      "2 tbsp olive oil",
+      "Fresh basil leaves"
+    ],
+    "steps": [
+      "Heat olive oil in a pan and sauté the onion and garlic until fragrant, then mix into the marinara sauce.",
+      "In a bowl, combine the ricotta cheese, half of the parmesan, and half of the mozzarella.",
+      "Toss the cooked ziti pasta with the cheesy ricotta mixture and half of the marinara sauce.",
+      "Spread a little sauce in the bottom of a large baking dish, then add the pasta mixture.",
+      "Top with remaining marinara sauce and a thick layer of mozzarella and parmesan cheese.",
+      "Bake at 375F for 25 minutes until the cheese is melted and bubbling."
+    ],
+    "minutes": 45,
+    "tags": [
+      "bake",
+      "pasta",
+      "Italian",
+      "cheese",
+      "comfort food"
+    ]
+  },
+  {
+    "title": "Mediterranean Chickpea Salad",
+    "description": "A crisp, refreshing salad loaded with protein-rich chickpeas, crunchy cucumbers, and tangy feta cheese.",
+    "cuisine": "Mediterranean",
+    "ingredients": [
+      "2 cups canned chickpeas, rinsed and drained",
+      "1 cucumber, diced",
+      "1 cup cherry tomatoes, halved",
+      "1/2 red onion, finely sliced",
+      "1/2 cup crumbled feta cheese",
+      "3 tbsp extra virgin olive oil",
+      "1 lemon, juiced",
+      "Salt and black pepper to taste"
+    ],
+    "steps": [
+      "Combine the chickpeas, cucumber, cherry tomatoes, and red onion in a large mixing bowl.",
+      "Whisk together the olive oil, lemon juice, salt, and pepper in a small bowl.",
+      "Pour the dressing over the salad and toss gently to combine.",
+      "Top with crumbled feta cheese and serve immediately."
+    ],
+    "minutes": 15,
+    "tags": [
+      "salad",
+      "vegetarian",
+      "quick",
+      "healthy"
+    ]
+  },
+  {
+    "title": "Lemon Herb Grilled Chicken",
+    "description": "Juicy chicken breasts marinated in garlic, lemon, and fresh herbs, then grilled to smoky perfection.",
+    "cuisine": "American",
+    "ingredients": [
+      "2 boneless, skinless chicken breasts",
+      "2 tbsp olive oil",
+      "2 cloves garlic, minced",
+      "1 lemon, zested and juiced",
+      "1 tsp dried oregano",
+      "1 tsp dried thyme",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "In a bowl, mix together the olive oil, minced garlic, lemon zest, lemon juice, oregano, thyme, salt, and pepper.",
+      "Add the chicken breasts to the marinade, ensuring they are well coated, and let sit for 20 minutes.",
+      "Preheat the grill to medium-high heat.",
+      "Grill the chicken for 6-8 minutes per side, or until internal temperature reaches 165F.",
+      "Let rest for 5 minutes before slicing and serving."
+    ],
+    "minutes": 35,
+    "tags": [
+      "grilled",
+      "chicken",
+      "protein",
+      "low-carb"
+    ]
+  },
+  {
+    "title": "Creamy Garlic Parmesan Pasta",
+    "description": "Simple yet indulgent pasta tossed in a rich, velvety garlic and parmesan cheese sauce.",
+    "cuisine": "Italian",
+    "ingredients": [
+      "8 oz fettuccine pasta",
+      "2 tbsp butter",
+      "3 cloves garlic, minced",
+      "1 cup heavy cream",
+      "1 cup freshly grated parmesan cheese",
+      "Salt and black pepper to taste",
+      "Chopped parsley for garnish"
+    ],
+    "steps": [
+      "Cook the fettuccine in salted boiling water according to package directions until al dente; drain, reserving 1/2 cup pasta water.",
+      "Melt the butter in a large skillet over medium heat and sauté the minced garlic for 1 minute.",
+      "Pour in the heavy cream and bring to a gentle simmer.",
+      "Stir in the grated parmesan cheese until melted and smooth.",
+      "Toss the cooked pasta into the sauce, adding reserved pasta water if needed to adjust consistency, and garnish with parsley."
+    ],
+    "minutes": 20,
+    "tags": [
+      "pasta",
+      "vegetarian",
+      "comfort food",
+      "italian"
+    ]
+  },
+  {
+    "title": "Berry Acai Breakfast Bowl",
+    "description": "A vibrant and energizing breakfast bowl topped with fresh berries, crunchy granola, and chia seeds.",
+    "cuisine": "Brazilian",
+    "ingredients": [
+      "1 unsweetened acai packet",
+      "1 frozen banana",
+      "1/2 cup mixed frozen berries",
+      "1/4 cup almond milk",
+      "1/4 cup granola",
+      "1 tbsp chia seeds",
+      "Fresh blueberries for topping"
+    ],
+    "steps": [
+      "Blend the frozen acai packet, frozen banana, mixed berries, and almond milk in a blender until thick and smooth.",
+      "Pour the smoothie mixture into a serving bowl.",
+      "Arrange the granola, chia seeds, and fresh blueberries neatly on top.",
+      "Serve immediately with a spoon."
+    ],
+    "minutes": 10,
+    "tags": [
+      "breakfast",
+      "vegan",
+      "smoothie",
+      "superfood"
+    ]
+  },
+  {
+    "title": "Classic Tiramisu Cup",
+    "description": "An elegant Italian no-bake dessert featuring layers of coffee-soaked ladyfingers and rich mascarpone cream.",
+    "cuisine": "Italian",
+    "ingredients": [
+      "6 ladyfinger cookies, halved",
+      "1/2 cup brewed espresso, cooled",
+      "1/2 cup mascarpone cheese",
+      "1/4 cup powdered sugar",
+      "1/3 cup heavy whipping cream",
+      "1 tsp vanilla extract",
+      "Cocoa powder for dusting"
+    ],
+    "steps": [
+      "Whisk together the mascarpone cheese, powdered sugar, heavy whipping cream, and vanilla extract until stiff peaks form.",
+      "Quickly dip the ladyfinger halves into the cooled espresso so they absorb the coffee without getting soggy.",
+      "Layer the dipped ladyfingers and mascarpone cream into two small glasses or jars.",
+      "Dust the top generously with cocoa powder and chill in the fridge for at least 1 hour before serving."
+    ],
+    "minutes": 25,
+    "tags": [
+      "dessert",
+      "italian",
+      "no-bake",
+      "sweet"
+    ]
+  },
+  {
+    "title": "Zucchini Noodles with Pesto",
+    "description": "A light, low-carb alternative to traditional pasta tossed in a vibrant homemade basil pesto.",
+    "cuisine": "Italian",
+    "ingredients": [
+      "3 medium zucchini, spiralized",
+      "1 cup fresh basil leaves",
+      "2 cloves garlic",
+      "1/4 cup pine nuts",
+      "1/3 cup extra virgin olive oil",
+      "1/4 cup grated parmesan cheese",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "In a food processor, blend the basil leaves, garlic, pine nuts, parmesan cheese, salt, and pepper.",
+      "Slowly drizzle in the olive oil while pulsing until a smooth pesto forms.",
+      "Heat a large skillet over medium-high heat and lightly sauté the spiralized zucchini noodles for 2-3 minutes just until warm.",
+      "Remove from heat, toss with the fresh pesto, and serve."
+    ],
+    "minutes": 15,
+    "tags": [
+      "low-carb",
+      "vegetarian",
+      "zucchini",
+      "pesto"
+    ]
+  },
+  {
+    "title": "Grilled Shrimp Skewers",
+    "description": "Succulent shrimp threaded onto skewers with bell peppers and onions, seasoned with smoky paprika.",
+    "cuisine": "Spanish",
+    "ingredients": [
+      "1 lb large shrimp, peeled and deveined",
+      "1 red bell pepper, cubed",
+      "1 yellow onion, cubed",
+      "2 tbsp olive oil",
+      "1 tsp smoked paprika",
+      "1 tsp garlic powder",
+      "Salt and pepper to taste",
+      "Lemon wedges for serving"
+    ],
+    "steps": [
+      "Thread the shrimp, bell pepper chunks, and onion pieces alternately onto wooden or metal skewers.",
+      "Brush the skewers all over with olive oil.",
+      "Season generously with smoked paprika, garlic powder, salt, and pepper.",
+      "Grill over medium-high heat for 3-4 minutes per side until the shrimp are pink and opaque.",
+      "Serve hot with fresh lemon wedges."
+    ],
+    "minutes": 20,
+    "tags": [
+      "grilled",
+      "seafood",
+      "shrimp",
+      "spicy"
+    ]
+  },
+  {
+    "title": "Creamy Mushroom Risotto",
+    "description": "A comforting Italian rice dish simmered slowly with earthy mushrooms, white wine, and parmesan.",
+    "cuisine": "Italian",
+    "ingredients": [
+      "1 cup arborio rice",
+      "8 oz cremini mushrooms, sliced",
+      "4 cups warm vegetable broth",
+      "1/2 cup dry white wine",
+      "1 shallot, finely chopped",
+      "2 tbsp butter",
+      "1/2 cup grated parmesan cheese",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Melt 1 tablespoon of butter in a pan and sauté the sliced mushrooms until browned; set aside.",
+      "In a large pot, sauté the shallot in the remaining butter until translucent.",
+      "Add the arborio rice, stirring for 2 minutes until lightly toasted.",
+      "Pour in the white wine and cook until fully absorbed.",
+      "Add warm broth one ladle at a time, stirring constantly until absorbed, until the rice is creamy and tender.",
+      "Stir in the cooked mushrooms and parmesan cheese before serving."
+    ],
+    "minutes": 30,
+    "tags": [
+      "rice",
+      "mushroom",
+      "vegetarian",
+      "comfort food"
+    ]
+  },
+  {
+    "title": "Avocado Toast with Poached Egg",
+    "description": "Crispy artisanal sourdough topped with mashed creamy avocado and a perfectly runny poached egg.",
+    "cuisine": "Australian",
+    "ingredients": [
+      "2 thick slices of sourdough bread",
+      "1 ripe avocado",
+      "2 large eggs",
+      "1 tbsp white vinegar",
+      "1 tsp red pepper flakes",
+      "Salt and pepper to taste",
+      "Drizzle of olive oil"
+    ],
+    "steps": [
+      "Toast the sourdough slices until golden and crisp.",
+      "Mash the avocado in a small bowl with salt, pepper, and a drizzle of olive oil, then spread over the toast.",
+      "Bring a pot of water to a gentle simmer and add the white vinegar.",
+      "Create a whirlpool in the water and drop in the eggs, poaching for 3 minutes.",
+      "Place the poached eggs on top of the avocado toast, sprinkle with red pepper flakes, and serve."
+    ],
+    "minutes": 15,
+    "tags": [
+      "breakfast",
+      "brunch",
+      "egg",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Mango Sorbet",
+    "description": "A naturally sweet, cooling, and dairy-free frozen treat made with just three simple ingredients.",
+    "cuisine": "Tropical",
+    "ingredients": [
+      "3 cups frozen mango chunks",
+      "2 tbsp honey or agave syrup",
+      "2 tbsp lime juice",
+      "Mint leaves for garnish"
+    ],
+    "steps": [
+      "Place the frozen mango chunks, honey, and lime juice into a high-powered food processor or blender.",
+      "Blend on high, scraping down the sides as needed, until smooth and creamy like soft-serve ice cream.",
+      "Transfer to an airtight container and freeze for 1 hour for a firmer scoopable consistency.",
+      "Serve in bowls garnished with fresh mint leaves."
+    ],
+    "minutes": 10,
+    "tags": [
+      "dessert",
+      "vegan",
+      "fruit",
+      "refreshing"
+    ]
+  },
+  {
+    "title": "Watermelon Feta Mint Salad",
+    "description": "A refreshing summer salad combining sweet juicy watermelon, salty feta cheese, and fragrant fresh mint.",
+    "cuisine": "Greek",
+    "ingredients": [
+      "4 cups watermelon, cubed",
+      "1 cup crumbled feta cheese",
+      "1/4 cup fresh mint leaves, chopped",
+      "2 tbsp balsamic glaze",
+      "1 tbsp extra virgin olive oil",
+      "Pinch of sea salt"
+    ],
+    "steps": [
+      "Arrange the cubed watermelon on a large serving platter.",
+      "Scatter the crumbled feta cheese evenly over the watermelon.",
+      "Sprinkle the freshly chopped mint leaves on top.",
+      "Drizzle with extra virgin olive oil and balsamic glaze, then add a pinch of sea salt right before serving."
+    ],
+    "minutes": 10,
+    "tags": [
+      "salad",
+      "summer",
+      "refreshing",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Grilled Halloumi and Peach Salad",
+    "description": "Warm caramelized peaches and salty grilled halloumi cheese served over a bed of fresh baby spinach.",
+    "cuisine": "Middle Eastern",
+    "ingredients": [
+      "1 block halloumi cheese, sliced",
+      "2 ripe peaches, pitted and sliced",
+      "4 cups baby spinach",
+      "2 tbsp olive oil",
+      "1 tbsp honey",
+      "1 tbsp balsamic vinegar"
+    ],
+    "steps": [
+      "Brush the halloumi slices and peach wedges lightly with olive oil.",
+      "Grill over medium heat for 2-3 minutes per side until grill marks appear.",
+      "Toss the baby spinach in a bowl with balsamic vinegar.",
+      "Top the spinach with the warm grilled halloumi and peaches, then drizzle with honey."
+    ],
+    "minutes": 20,
+    "tags": [
+      "salad",
+      "grilled",
+      "cheese",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Spaghetti Aglio e Olio",
+    "description": "A classic rustic Italian pasta dish tossed in garlic-infused olive oil, chili flakes, and fresh parsley.",
+    "cuisine": "Italian",
+    "ingredients": [
+      "8 oz spaghetti",
+      "1/3 cup extra virgin olive oil",
+      "5 cloves garlic, thinly sliced",
+      "1/2 tsp red pepper flakes",
+      "1/4 cup fresh parsley, chopped",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Cook the spaghetti in a large pot of boiling salted water until al dente, reserving 1/2 cup pasta water before draining.",
+      "Heat the olive oil in a skillet over medium-low heat, add the sliced garlic, and cook gently until golden brown.",
+      "Stir in the red pepper flakes and remove the skillet from the heat.",
+      "Toss the cooked spaghetti into the garlic oil along with the reserved pasta water.",
+      "Stir in the chopped parsley and serve immediately."
+    ],
+    "minutes": 15,
+    "tags": [
+      "pasta",
+      "vegetarian",
+      "quick",
+      "italian"
+    ]
+  },
+  {
+    "title": "Fluffy Greek Yogurt Pancakes",
+    "description": "Light, fluffy, and protein-packed pancakes made with wholesome Greek yogurt instead of buttermilk.",
+    "cuisine": "American",
+    "ingredients": [
+      "1 cup all-purpose flour",
+      "1 tsp baking powder",
+      "1/2 tsp baking soda",
+      "1 cup plain Greek yogurt",
+      "2 large eggs",
+      "2 tbsp maple syrup",
+      "1 tsp vanilla extract",
+      "Butter for the pan"
+    ],
+    "steps": [
+      "Whisk together the flour, baking powder, and baking soda in a large bowl.",
+      "In a separate bowl, whisk the Greek yogurt, eggs, maple syrup, and vanilla extract until smooth.",
+      "Fold the wet ingredients into the dry ingredients until just combined.",
+      "Melt butter in a griddle over medium heat and drop 1/4 cup of batter for each pancake.",
+      "Cook until bubbles form on the surface, then flip and cook for another 2 minutes until golden."
+    ],
+    "minutes": 20,
+    "tags": [
+      "breakfast",
+      "pancakes",
+      "vegetarian",
+      "protein"
+    ]
+  },
+  {
+    "title": "Chia Seed Breakfast Pudding",
+    "description": "A make-ahead healthy breakfast pudding featuring chia seeds soaked in almond milk with vanilla and berries.",
+    "cuisine": "French",
+    "ingredients": [
+      "1/4 cup chia seeds",
+      "1 cup almond milk",
+      "1 tbsp maple syrup",
+      "1/2 tsp vanilla extract",
+      "1/2 cup fresh raspberries",
+      "Toasted almonds for topping"
+    ],
+    "steps": [
+      "Whisk together the chia seeds, almond milk, maple syrup, and vanilla extract in a jar.",
+      "Let the mixture sit for 5 minutes, then stir again to prevent clumping.",
+      "Cover the jar and place it in the refrigerator for at least 4 hours or overnight.",
+      "Top with fresh raspberries and toasted almonds before eating."
+    ],
+    "minutes": 10,
+    "tags": [
+      "breakfast",
+      "vegan",
+      "prep-ahead",
+      "healthy"
+    ]
+  },
+  {
+    "title": "Caprese Salad Skewers",
+    "description": "Bite-sized party appetizers featuring cherry tomatoes, fresh mozzarella balls, and basil leaves.",
+    "cuisine": "Italian",
+    "ingredients": [
+      "1 pint cherry tomatoes",
+      "1 cup mini mozzarella balls (bocconcini)",
+      "Fresh basil leaves",
+      "2 tbsp balsamic glaze",
+      "2 tbsp extra virgin olive oil",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Thread a cherry tomato, a folded basil leaf, and a mozzarella ball onto small wooden skewers.",
+      "Repeat until all ingredients are used and arrange the skewers on a serving platter.",
+      "Drizzle with extra virgin olive oil and balsamic glaze.",
+      "Season with a light pinch of salt and black pepper just before serving."
+    ],
+    "minutes": 15,
+    "tags": [
+      "appetizer",
+      "vegetarian",
+      "salad",
+      "quick"
+    ]
+  },
+  {
+    "title": "Grilled Asparagus with Lemon Zest",
+    "description": "Tender-crisp asparagus spears charred on the grill and finished with fresh lemon and parmesan.",
+    "cuisine": "American",
+    "ingredients": [
+      "1 bunch fresh asparagus, woody ends trimmed",
+      "1 tbsp olive oil",
+      "1 lemon, zested and juiced",
+      "2 tbsp grated parmesan cheese",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Preheat the grill to medium-high heat.",
+      "Toss the asparagus spears with olive oil, salt, and pepper.",
+      "Place the asparagus directly on the grill grates and cook for 5-7 minutes, turning occasionally, until charred and tender.",
+      "Transfer to a serving platter, squeeze fresh lemon juice over top, and garnish with lemon zest and parmesan cheese."
+    ],
+    "minutes": 15,
+    "tags": [
+      "grilled",
+      "side dish",
+      "vegetable",
+      "healthy"
+    ]
+  },
+  {
+    "title": "Creamy Pesto Chicken Pasta",
+    "description": "Tender pieces of chicken and penne pasta tossed in a rich, flavorful pesto cream sauce.",
+    "cuisine": "Italian",
+    "ingredients": [
+      "8 oz penne pasta",
+      "1 chicken breast, diced",
+      "1/3 cup prepared basil pesto",
+      "1/2 cup heavy cream",
+      "2 tbsp olive oil",
+      "1/4 cup grated parmesan cheese",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Cook the penne pasta in boiling salted water until al dente; drain and set aside.",
+      "Heat olive oil in a skillet and cook the diced chicken breast until golden brown and cooked through.",
+      "Reduce heat to low, stir in the heavy cream and basil pesto, and let simmer for 2 minutes.",
+      "Toss the cooked pasta and parmesan cheese into the sauce until thoroughly coated and warm."
+    ],
+    "minutes": 25,
+    "tags": [
+      "pasta",
+      "chicken",
+      "dinner",
+      "italian"
+    ]
+  },
+  {
+    "title": "Baked Berry Oatmeal",
+    "description": "A warm, comforting baked oatmeal packed with juicy mixed berries and a hint of cinnamon.",
+    "cuisine": "British",
+    "ingredients": [
+      "2 cups rolled oats",
+      "1 tsp baking powder",
+      "1 tsp ground cinnamon",
+      "1 3/4 cups milk",
+      "1/3 cup maple syrup",
+      "2 large eggs",
+      "1 cup mixed fresh berries"
+    ],
+    "steps": [
+      "Preheat your oven to 375F (190C) and lightly grease a baking dish.",
+      "In a bowl, mix the rolled oats, baking powder, and cinnamon together.",
+      "In a separate bowl, whisk the milk, maple syrup, and eggs.",
+      "Pour the wet mixture into the dry oat mixture and stir in half of the berries.",
+      "Transfer to the baking dish, top with the remaining berries, and bake for 30 minutes until set and golden."
+    ],
+    "minutes": 35,
+    "tags": [
+      "breakfast",
+      "baked",
+      "vegetarian",
+      "oatmeal"
+    ]
+  },
+  {
+    "title": "Grilled Portobello Mushroom Burgers",
+    "description": "Juicy, meaty portobello mushroom caps grilled and served on brioche buns with melted cheese.",
+    "cuisine": "American",
+    "ingredients": [
+      "4 large portobello mushroom caps, stems removed",
+      "3 tbsp balsamic vinegar",
+      "2 tbsp olive oil",
+      "2 cloves garlic, minced",
+      "4 slices provolone cheese",
+      "4 brioche burger buns",
+      "Lettuce and sliced tomatoes for serving"
+    ],
+    "steps": [
+      "Whisk together the balsamic vinegar, olive oil, and minced garlic in a shallow dish.",
+      "Marinate the portobello mushroom caps in the mixture for 15 minutes.",
+      "Preheat the grill to medium heat and grill the mushrooms for 4-5 minutes per side.",
+      "Place a slice of provolone cheese on each mushroom during the last minute of grilling to melt.",
+      "Serve on toasted brioche buns with lettuce and tomato."
+    ],
+    "minutes": 25,
+    "tags": [
+      "grilled",
+      "vegetarian",
+      "burger",
+      "mushroom"
+    ]
+  },
+  {
+    "title": "Lemon Garlic Shrimp Pasta",
+    "description": "Lighter pasta dish featuring succulent shrimp tossed in garlic, white wine, and fresh lemon juice.",
+    "cuisine": "Italian",
+    "ingredients": [
+      "8 oz linguine",
+      "1 lb large shrimp, peeled",
+      "3 tbsp butter",
+      "4 cloves garlic, minced",
+      "1/4 cup dry white wine",
+      "1 lemon, juiced",
+      "Chopped parsley for garnish"
+    ],
+    "steps": [
+      "Cook linguine in salted boiling water until al dente, reserving 1/2 cup pasta water.",
+      "Melt butter in a large skillet and sauté the minced garlic and shrimp until pink; remove shrimp.",
+      "Pour white wine and lemon juice into the skillet, simmering until slightly reduced.",
+      "Toss pasta, shrimp, and reserved water into the skillet until well combined and glossy.",
+      "Garnish with chopped parsley and serve."
+    ],
+    "minutes": 20,
+    "tags": [
+      "pasta",
+      "seafood",
+      "shrimp",
+      "italian"
+    ]
+  },
+  {
+    "title": "Healthy Green Smoothie Bowl",
+    "description": "A thick, nutritious smoothie bowl made with spinach, banana, and pineapple, topped with seeds.",
+    "cuisine": "American",
+    "ingredients": [
+      "1 cup fresh baby spinach",
+      "1 frozen banana",
+      "1/2 cup frozen pineapple chunks",
+      "1/2 cup coconut water",
+      "1 tbsp pumpkin seeds",
+      "1 tbsp shredded coconut"
+    ],
+    "steps": [
+      "Combine the baby spinach, frozen banana, frozen pineapple chunks, and coconut water in a blender.",
+      "Blend on high speed until completely smooth and thick.",
+      "Pour the green mixture into a breakfast bowl.",
+      "Top with pumpkin seeds and shredded coconut before enjoying."
+    ],
+    "minutes": 10,
+    "tags": [
+      "breakfast",
+      "smoothie",
+      "vegan",
+      "healthy"
+    ]
+  },
+  {
+    "title": "Grilled Eggplant Parmesan Stacks",
+    "description": "Layered stacks of smoky grilled eggplant, marinara sauce, and melted mozzarella cheese.",
+    "cuisine": "Italian",
+    "ingredients": [
+      "1 large eggplant, sliced into rounds",
+      "3 tbsp olive oil",
+      "1 cup marinara sauce",
+      "1 cup shredded mozzarella cheese",
+      "1/4 cup grated parmesan cheese",
+      "Fresh basil leaves"
+    ],
+    "steps": [
+      "Brush eggplant slices with olive oil and grill on medium heat for 4 minutes per side until tender.",
+      "Preheat your oven's broiler.",
+      "On a baking sheet, layer grilled eggplant rounds with spoonfuls of marinara sauce and mozzarella cheese.",
+      "Broil for 3-4 minutes until the cheese is melted and bubbling.",
+      "Garnish with parmesan and fresh basil leaves."
+    ],
+    "minutes": 25,
+    "tags": [
+      "grilled",
+      "vegetarian",
+      "eggplant",
+      "italian"
+    ]
+  },
+  {
+    "title": "Classic Lemon Sorbet",
+    "description": "A deliciously tart and frosty palate cleanser made with fresh citrus juice and simple syrup.",
+    "cuisine": "French",
+    "ingredients": [
+      "1 cup sugar",
+      "1 cup water",
+      "1 cup fresh lemon juice",
+      "1 tbsp lemon zest"
+    ],
+    "steps": [
+      "Combine sugar and water in a small saucepan, heating until the sugar completely dissolves, then let cool.",
+      "Stir in the fresh lemon juice and lemon zest into the cooled simple syrup mixture.",
+      "Pour the mixture into an ice cream maker and churn according to the manufacturer instructions.",
+      "Transfer to a freezer-safe container and freeze for 2 hours before serving."
+    ],
+    "minutes": 20,
+    "tags": [
+      "dessert",
+      "vegan",
+      "refreshing",
+      "citrus"
+    ]
+  },
+  {
+    "title": "Fresh Tomato Basil Pasta",
+    "description": "A vibrant summer pasta featuring uncooked cherry tomatoes marinated in garlic, olive oil, and basil.",
+    "cuisine": "Italian",
+    "ingredients": [
+      "8 oz penne or spaghetti",
+      "2 cups cherry tomatoes, quartered",
+      "3 cloves garlic, minced",
+      "1/4 cup extra virgin olive oil",
+      "1/2 cup fresh basil leaves, torn",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "In a large bowl, combine the quartered cherry tomatoes, minced garlic, extra virgin olive oil, torn basil leaves, salt, and pepper; let sit for 30 minutes.",
+      "Cook the pasta in salted boiling water until al dente, then drain.",
+      "Add the hot pasta directly to the tomato mixture and toss well.",
+      "Let the residual heat slightly warm the tomatoes and serve."
+    ],
+    "minutes": 35,
+    "tags": [
+      "pasta",
+      "vegetarian",
+      "summer",
+      "italian"
+    ]
+  }
+]

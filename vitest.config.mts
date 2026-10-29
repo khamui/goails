@@ -5,6 +5,8 @@ export default defineConfig({
   test: {
     environment: "node",
     include: ["src/**/*.test.ts"],
+    setupFiles: ["./vitest.setup.ts"],
+    testTimeout: 30_000, // integration tests make live embedding + DB calls
   },
   resolve: {
     alias: {
