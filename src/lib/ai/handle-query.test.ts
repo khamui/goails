@@ -1,58 +1,66 @@
-import { simulateReadableStream } from "ai";
+import { simulateReadableStream, tool } from "ai";
 import { MockLanguageModelV4 } from "ai/test";
 import { describe, expect, it } from "vitest";
+import { z } from "zod";
+import { productsResultContract } from "../domains/products/contract";
 import { handleQuery } from "./handle-query";
 
-/** A mock model that streams the given text deltas and then finishes. */
+const usage = {
+  inputTokens: { total: 3, noCache: 3, cacheRead: undefined, cacheWrite: undefined },
+  outputTokens: { total: 5, text: 5, reasoning: undefined },
+};
+
+/** A model that streams the given text deltas, then finishes. */
 function textModel(deltas: string[]) {
   return new MockLanguageModelV4({
     doStream: async () => ({
       stream: simulateReadableStream({
         chunks: [
-          { type: "text-start", id: "text-1" },
-          ...deltas.map((delta) => ({
-            type: "text-delta" as const,
-            id: "text-1",
-            delta,
-          })),
-          { type: "text-end", id: "text-1" },
-          {
-            type: "finish",
-            finishReason: { unified: "stop", raw: undefined },
-            logprobs: undefined,
-            usage: {
-              inputTokens: {
-                total: 3,
-                noCache: 3,
-                cacheRead: undefined,
-                cacheWrite: undefined,
-              },
-              outputTokens: { total: 5, text: 5, reasoning: undefined },
-            },
-          },
+          { type: "text-start", id: "t1" },
+          ...deltas.map((delta) => ({ type: "text-delta" as const, id: "t1", delta })),
+          { type: "text-end", id: "t1" },
+          { type: "finish", finishReason: { unified: "stop", raw: undefined }, logprobs: undefined, usage },
         ],
       }),
     }),
   });
 }
 
-async function collect(stream: AsyncIterable<string>) {
+/** A model that emits a single tool call for `toolName` with `input`. */
+function toolCallModel(toolName: string, input: unknown) {
+  return new MockLanguageModelV4({
+    doStream: async () => ({
+      stream: simulateReadableStream({
+        chunks: [
+          { type: "tool-call", toolCallId: "call-1", toolName, input: JSON.stringify(input) },
+          { type: "finish", finishReason: { unified: "tool-calls", raw: undefined }, logprobs: undefined, usage },
+        ],
+      }),
+    }),
+  });
+}
+
+async function drain(result: { stream: AsyncIterable<unknown> }) {
+  // consume so the stream completes and the result promises resolve
+  for await (const part of result.stream) void part;
+}
+
+async function collectText(stream: AsyncIterable<string>) {
   let text = "";
   for await (const part of stream) text += part;
   return text;
 }
 
-describe("handleQuery — Fallback text path", () => {
-  it("streams the model's text answer for a Query", async () => {
+describe("handleQuery", () => {
+  it("streams a plain-text answer when no tool fits (Fallback)", async () => {
     const result = handleQuery({
-      query: "how are you?",
+      messages: [{ role: "user", content: "how are you?" }],
       model: textModel(["I am ", "doing well."]),
     });
-
-    expect(await collect(result.textStream)).toBe("I am doing well.");
+    expect(await collectText(result.textStream)).toBe("I am doing well.");
   });
 
-  it("forwards prior conversation history before the new Query", async () => {
+  it("forwards the whole conversation to the model", async () => {
     let receivedPrompt: unknown;
     const model = new MockLanguageModelV4({
       doStream: async (options) => {
@@ -60,23 +68,10 @@ describe("handleQuery — Fallback text path", () => {
         return {
           stream: simulateReadableStream({
             chunks: [
-              { type: "text-start", id: "text-1" },
-              { type: "text-delta", id: "text-1", delta: "ok" },
-              { type: "text-end", id: "text-1" },
-              {
-                type: "finish",
-                finishReason: { unified: "stop", raw: undefined },
-                logprobs: undefined,
-                usage: {
-                  inputTokens: {
-                    total: 3,
-                    noCache: 3,
-                    cacheRead: undefined,
-                    cacheWrite: undefined,
-                  },
-                  outputTokens: { total: 1, text: 1, reasoning: undefined },
-                },
-              },
+              { type: "text-start", id: "t1" },
+              { type: "text-delta", id: "t1", delta: "ok" },
+              { type: "text-end", id: "t1" },
+              { type: "finish", finishReason: { unified: "stop", raw: undefined }, logprobs: undefined, usage },
             ],
           }),
         };
@@ -84,14 +79,14 @@ describe("handleQuery — Fallback text path", () => {
     });
 
     const result = handleQuery({
-      query: "and cheaper?",
-      history: [
+      messages: [
         { role: "user", content: "a laptop under 1000" },
         { role: "assistant", content: "Here are some options." },
+        { role: "user", content: "and cheaper?" },
       ],
       model,
     });
-    await collect(result.textStream);
+    await collectText(result.textStream);
 
     const serialized = JSON.stringify(receivedPrompt);
     expect(serialized).toContain("a laptop under 1000");
@@ -99,5 +94,43 @@ describe("handleQuery — Fallback text path", () => {
     expect(serialized.indexOf("a laptop under 1000")).toBeLessThan(
       serialized.lastIndexOf("and cheaper?"),
     );
+  });
+
+  it("routes a product query to the products Tool and yields contract-valid output", async () => {
+    const stubProductsTool = tool({
+      description: "stub product search",
+      inputSchema: z.object({
+        text: z.string().optional(),
+        maxPriceCents: z.number().int().positive().optional(),
+      }),
+      execute: async () =>
+        productsResultContract.parse({
+          products: [
+            {
+              id: "p1",
+              name: "Test Laptop",
+              description: "A test laptop.",
+              category: "electronics",
+              priceCents: 90000,
+              currency: "EUR",
+              tags: ["laptop"],
+            },
+          ],
+        }),
+    });
+
+    const result = handleQuery({
+      messages: [{ role: "user", content: "a laptop under 1000" }],
+      model: toolCallModel("searchProducts", { text: "laptop", maxPriceCents: 100000 }),
+      tools: { searchProducts: stubProductsTool },
+    });
+    await drain(result);
+
+    const toolResults = await result.toolResults;
+    const searchResult = toolResults.find((r) => r.toolName === "searchProducts");
+    expect(searchResult).toBeDefined();
+    const parsed = productsResultContract.safeParse(searchResult?.output);
+    expect(parsed.success).toBe(true);
+    expect(parsed.success && parsed.data.products[0].name).toBe("Test Laptop");
   });
 });

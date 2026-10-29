@@ -1,32 +1,23 @@
 import {
-  createTextStreamResponse,
-  toTextStream,
-  type ModelMessage,
+  convertToModelMessages,
+  createUIMessageStreamResponse,
+  toUIMessageStream,
 } from "ai";
 import { handleQuery } from "@/lib/ai/handle-query";
 import { resolveModel } from "@/lib/ai/provider";
-
-interface QueryRequest {
-  query?: unknown;
-  history?: ModelMessage[];
-}
+import type { GoailsUIMessage } from "@/lib/ai/ui";
+import { domainTools } from "@/lib/domains/registry.server";
 
 export async function POST(request: Request) {
-  const body = (await request.json()) as QueryRequest;
-
-  if (typeof body.query !== "string" || body.query.trim() === "") {
-    return new Response("A non-empty 'query' string is required.", {
-      status: 400,
-    });
-  }
+  const { messages } = (await request.json()) as { messages: GoailsUIMessage[] };
 
   const result = handleQuery({
-    query: body.query,
-    history: body.history,
+    messages: await convertToModelMessages(messages),
     model: resolveModel(),
+    tools: domainTools,
   });
 
-  return createTextStreamResponse({
-    stream: toTextStream({ stream: result.stream }),
+  return createUIMessageStreamResponse({
+    stream: toUIMessageStream({ stream: result.stream }),
   });
 }
