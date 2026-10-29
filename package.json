@@ -12,7 +12,9 @@
     "db:migrate": "tsx scripts/db/migrate.ts",
     "db:generate": "tsx scripts/db/generate-seed.ts",
     "db:seed": "tsx scripts/db/seed.ts",
-    "db:setup": "npm run db:migrate && npm run db:seed"
+    "db:setup": "npm run db:migrate && npm run db:seed",
+    "eval": "evalite run",
+    "eval:watch": "evalite watch"
   },
   "dependencies": {
     "@ai-sdk/anthropic": "^4.0.91",
@@ -38,9 +40,13 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.4.3",
+    "evalite": "^0.19.0",
     "tailwindcss": "^4",
     "tsx": "^4.23.15",
     "typescript": "^5",
     "vitest": "^5.0.5"
+  },
+  "overrides": {
+    "better-sqlite3": "^12.4.1"
   }
 }
