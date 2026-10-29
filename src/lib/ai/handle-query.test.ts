@@ -170,4 +170,47 @@ describe("handleQuery", () => {
     expect(parsed.success).toBe(true);
     expect(parsed.success && parsed.data.recipes[0].title).toBe("Hearty Beef Stew");
   });
+
+  it("re-routes a refinement turn to the tool with the updated constraint", async () => {
+    const stubProductsTool = tool({
+      description: "stub product search",
+      inputSchema: z.object({
+        text: z.string().optional(),
+        maxPriceCents: z.number().int().positive().optional(),
+      }),
+      execute: async () => productsResultContract.parse({ products: [] }),
+    });
+
+    const result = handleQuery({
+      messages: [
+        { role: "user", content: "a laptop" },
+        { role: "assistant", content: "Here are some laptops." },
+        { role: "user", content: "cheaper, under 800" },
+      ],
+      model: toolCallModel("searchProducts", { text: "laptop", maxPriceCents: 80000 }),
+      tools: { searchProducts: stubProductsTool },
+    });
+    await drain(result);
+
+    const call = (await result.toolCalls).find((c) => c.toolName === "searchProducts");
+    expect(call).toBeDefined();
+    expect((call?.input as { maxPriceCents?: number }).maxPriceCents).toBe(80000);
+  });
+
+  it("asks a clarifying question in text (no tool call) when a query is ambiguous", async () => {
+    const stub = tool({
+      description: "stub",
+      inputSchema: z.object({ text: z.string().optional(), query: z.string().optional() }),
+      execute: async () => ({}),
+    });
+
+    const result = handleQuery({
+      messages: [{ role: "user", content: "apple" }],
+      model: textModel(["Do you mean ", "Apple products or apple recipes?"]),
+      tools: { searchProducts: stub, searchRecipes: stub },
+    });
+
+    expect(await collectText(result.textStream)).toContain("Apple products or apple recipes");
+    expect((await result.toolCalls).length).toBe(0);
+  });
 });
