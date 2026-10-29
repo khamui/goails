@@ -25,5 +25,10 @@ export function handleQuery({ query, history = [], model }: HandleQueryInput) {
     model,
     system: FALLBACK_SYSTEM_PROMPT,
     messages: [...history, { role: "user", content: query }],
+    onError({ error }) {
+      // A mid-stream provider error (e.g. a 503 overload) arrives here after
+      // the 200 headers are sent. Log it so it is not swallowed silently.
+      console.error("[handleQuery] stream error:", error);
+    },
   });
 }

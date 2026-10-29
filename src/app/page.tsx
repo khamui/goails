@@ -28,10 +28,17 @@ export default function Home() {
 
       const reader = response.body.getReader();
       const decoder = new TextDecoder();
+      let received = "";
       for (;;) {
         const { done, value } = await reader.read();
         if (done) break;
-        setAnswer((prev) => prev + decoder.decode(value, { stream: true }));
+        received += decoder.decode(value, { stream: true });
+        setAnswer(received);
+      }
+      if (!received) {
+        setAnswer(
+          "No response — the model may be busy (a 503). Check the server logs, retry, or set GOAILS_MODEL_ID=gemini-3.5-flash-lite in .env.local and restart.",
+        );
       }
     } catch (error) {
       setAnswer(
