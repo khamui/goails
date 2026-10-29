@@ -35,4 +35,18 @@ npm run build      # production build
 npm run lint       # eslint
 npm run typecheck  # next typegen && tsc --noEmit
 npm test           # run the test suite (vitest)
+npm run db:setup   # migrate + seed the database (run once after setup)
+npm run eval       # run the Evalite routing + quality eval (needs a seeded DB + key)
+npm run eval:watch # Evalite dashboard with live re-runs
 ```
+
+## Evals
+
+`evals/routing.eval.ts` runs the real Router over a labeled Query→Domain set and
+scores it with two scorers: **Routing accuracy** (exact match) and **Relevance**
+(an LLM-as-judge). It's how routing/clarification quality gets measured instead
+of eyeballed.
+
+> The eval makes many model calls at once; on the Gemini **free tier** some rows
+> can hit the per-minute quota and error. Re-run after a minute, lower the
+> dataset size, or use a paid/less-limited key for a full clean run.
