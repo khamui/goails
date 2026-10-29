@@ -1,13 +1,16 @@
 "use client";
 
 import { useState } from "react";
+import { useCollections } from "@/components/collections/collections-provider";
 import { Button } from "@/components/ui/button";
 import type { Recipe, RecipesResult } from "@/lib/domains/recipes/contract";
 
 function RecipeCard({ recipe }: { recipe: Recipe }) {
+  const { isSaved, toggleSaved } = useCollections();
   const [open, setOpen] = useState(false);
   const [servings, setServings] = useState(2);
   const [done, setDone] = useState<Set<number>>(new Set());
+  const saved = isSaved(recipe.id);
 
   function toggleStep(index: number) {
     setDone((prev) => {
@@ -40,9 +43,20 @@ function RecipeCard({ recipe }: { recipe: Recipe }) {
         </div>
       )}
 
-      <Button size="sm" variant="outline" type="button" onClick={() => setOpen((o) => !o)}>
-        {open ? "Hide recipe" : "View recipe"}
-      </Button>
+      <div className="flex gap-2">
+        <Button size="sm" variant="outline" type="button" onClick={() => setOpen((o) => !o)}>
+          {open ? "Hide recipe" : "View recipe"}
+        </Button>
+        <Button
+          size="sm"
+          variant={saved ? "secondary" : "outline"}
+          type="button"
+          aria-pressed={saved}
+          onClick={() => toggleSaved(recipe)}
+        >
+          {saved ? "Saved ✓" : "Save"}
+        </Button>
+      </div>
 
       {open && (
         <div className="space-y-3 pt-2">
