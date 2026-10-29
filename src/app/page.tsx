@@ -6,6 +6,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ProductsSurface } from "@/components/surfaces/products-surface";
+import { RecipesSurface } from "@/components/surfaces/recipes-surface";
 import type { GoailsUIMessage } from "@/lib/ai/ui";
 
 export default function Home() {
@@ -77,6 +78,30 @@ export default function Home() {
                     case "output-available":
                       return (
                         <ProductsSurface key={index} products={part.output.products} />
+                      );
+                    case "output-error":
+                      return (
+                        <p key={index} className="text-sm text-destructive">
+                          Error: {part.errorText}
+                        </p>
+                      );
+                    default:
+                      return null;
+                  }
+                }
+
+                if (part.type === "tool-searchRecipes") {
+                  switch (part.state) {
+                    case "input-streaming":
+                    case "input-available":
+                      return (
+                        <p key={index} className="text-sm text-muted-foreground">
+                          Finding recipes…
+                        </p>
+                      );
+                    case "output-available":
+                      return (
+                        <RecipesSurface key={index} recipes={part.output.recipes} />
                       );
                     case "output-error":
                       return (
