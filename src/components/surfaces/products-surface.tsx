@@ -1,21 +1,14 @@
 "use client";
 
+import { useCollections } from "@/components/collections/collections-provider";
 import { Button } from "@/components/ui/button";
 import type { ProductsResult } from "@/lib/domains/products/contract";
-
-function formatPrice(cents: number, currency: string) {
-  try {
-    return new Intl.NumberFormat(undefined, {
-      style: "currency",
-      currency,
-    }).format(cents / 100);
-  } catch {
-    return `${(cents / 100).toFixed(2)} ${currency}`;
-  }
-}
+import { formatPrice } from "@/lib/money";
 
 /** The Products Surface: renders buyable product cards from the contract. */
 export function ProductsSurface({ products }: ProductsResult) {
+  const { addToCart } = useCollections();
+
   if (products.length === 0) {
     return (
       <p className="text-sm text-muted-foreground">No matching products.</p>
@@ -42,8 +35,7 @@ export function ProductsSurface({ products }: ProductsResult) {
             <span className="text-xs text-muted-foreground">
               {product.category}
             </span>
-            {/* Cart/checkout Action is implemented in ticket #8. */}
-            <Button size="sm" type="button">
+            <Button size="sm" type="button" onClick={() => addToCart(product)}>
               Add to cart
             </Button>
           </div>

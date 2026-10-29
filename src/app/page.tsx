@@ -5,6 +5,7 @@ import { DefaultChatTransport } from "ai";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { CollectionsBar } from "@/components/collections/collections-bar";
 import { ProductsSurface } from "@/components/surfaces/products-surface";
 import { RecipesSurface } from "@/components/surfaces/recipes-surface";
 import type { GoailsUIMessage } from "@/lib/ai/ui";
@@ -97,7 +98,8 @@ export default function Home() {
   return (
     <main className="flex flex-1 flex-col items-center p-4">
       <div className="w-full max-w-2xl space-y-6">
-        <header className="space-y-2 pt-8 text-center">
+        <CollectionsBar />
+        <header className="space-y-2 text-center">
           <h1 className="text-3xl font-semibold tracking-tight">Goails</h1>
           <p className="text-muted-foreground">
             Ask for anything — products, recipes, and more.
