@@ -10,7 +10,7 @@ export type ModelProvider = "google" | "anthropic";
 
 /** Default free-tier/default model id per provider. */
 const DEFAULT_MODEL_ID: Record<ModelProvider, string> = {
-  google: "gemini-2.5-flash", // free tier, no credit card
+  google: "gemini-3.8-flash", // free tier, no credit card
   anthropic: "claude-sonnet-5-5", // swappable; billed to a Claude API key
 };
 
